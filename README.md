@@ -7,7 +7,7 @@ Members of Team:
 - Aman Singh Sahni(aman1703@my.yorku.ca) Section P, Lab 01
 - Angad Singh Rekhi(angarsr03@gmail.com) section P Lab 01
 
-Project Title: Squid Arcade
+Project Name: Squid Arcade
 
 # Description: 
 For our project, we’ve decided to create an app with a series of mini-games inspired by the popular Netflix series “Squid Game”. The app will include 3 different games: Red Light Green Light, Marbles, Dalgona Cookies, and 2 side widgets: a weather widget and a basic 4 function calculator. 
