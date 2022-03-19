@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Squid Arcade</string>
+    <string name="game1">Red Light Green Light</string>
+    <string name="game2">Marbles</string>
 </resources>
