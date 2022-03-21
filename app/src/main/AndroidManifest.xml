@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SquidArcade">
         <activity
-            android:name=".MainActivity"
+            android:name=".RLGLMain"
+            android:exported="false" />
+        <activity
+            android:name=".redLightGreenLight"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
