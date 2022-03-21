@@ -2,5 +2,5 @@
     <string name="app_name">Squid Arcade</string>
     <string name="game1">Red Light Green Light</string>
     <string name="game2">Marbles</string>
-    <string name="home_info">In this app we will have 2 games namely Red Light Green Light and Marbles. For further information select a game to play</string>
+    <string name="home_info">Welcome to SQUID ARCADE please select a game to begin!</string>
 </resources>
