@@ -3,4 +3,7 @@
     <string name="game1">Red Light Green Light</string>
     <string name="game2">Marbles</string>
     <string name="home_info">Welcome to SQUID ARCADE please select a game to begin!</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="singleplayer">Singleplayer</string>
+    <string name="marbles_remaining">Marbles Remaining: </string>
 </resources>
