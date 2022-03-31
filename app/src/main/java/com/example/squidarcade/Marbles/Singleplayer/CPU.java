@@ -32,6 +32,16 @@ public class CPU implements Player {
     public void setGamble(int gamble) {
     }
 
+    @Override
+    public String getPlayerRole() {
+        return this.playerRole;
+    }
+
+    @Override
+    public void setPlayerRole(String newRole) {
+        this.playerRole = newRole;
+    }
+
     //sets a random Boolean value to guess for even or odd
     public void setGuess(){
         Random randomBoolean = new Random();
