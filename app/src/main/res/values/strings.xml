@@ -5,5 +5,8 @@
     <string name="home_info">Welcome to SQUID ARCADE please select a game to begin!</string>
     <string name="multiplayer">Multiplayer</string>
     <string name="singleplayer">Singleplayer</string>
-    <string name="marbles_remaining">Marbles Remaining: </string>
+    <string name="marbles">Marbles</string>
+    <string name="round">Round #</string>
+    <string name="requestGamble">Enter number of marbles you want to gamble below:</string>
+    <string name="marblesRemaining">Marbles Remaining:</string>
 </resources>
