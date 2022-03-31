@@ -15,7 +15,8 @@ public class Human implements Player{
 
     //null
     @Override
-    public void setGamble() {
+    public int generateGamble() {
+        return 0;
     }
 
     @Override
@@ -41,6 +42,11 @@ public class Human implements Player{
     }*/
     public String getPlayerRole(){
         return this.playerRole;
+    }
+
+    @Override
+    public String getGuess() {
+        return null;
     }
 
 
