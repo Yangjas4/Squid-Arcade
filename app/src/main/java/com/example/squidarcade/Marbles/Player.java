@@ -17,7 +17,7 @@ public class Player {
     }
 
     //Have Gamble be a boolean value. True for even and false for odd.
-    //So even button will make gamble Truawe and odd will make it False
+    //So even button will make gamble True and odd will make it False
     public void changeMarbles(Boolean gamble){
         if(gamble){
             if(marbles % 2 == 0){

@@ -27,6 +27,10 @@ public class CPU {
         this.guess = randomBoolean.nextBoolean();
     }
 
+    public Boolean getGuess(){
+        return this.guess;
+    }
+
     public int getMarbles(){
         return this.marbles;
     }
