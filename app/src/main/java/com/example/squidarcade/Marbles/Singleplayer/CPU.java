@@ -1,17 +1,19 @@
-package com.example.squidarcade.Marbles;
+package com.example.squidarcade.Marbles.Singleplayer;
 
 import java.util.Random;
 
-public class CPU {
+public class CPU implements Player {
     private int marbles;
-    private int gamble;
     private Boolean guess;
+    private String playerRole;
+
 
     public CPU(){
         this.marbles = 10;
     }
 
     //Generates random number from 1-3, unless there are less than 3 marbles.
+    @Override
     public void setGamble(){
         Random randomNumber = new Random();
         if(this.marbles>2){
@@ -19,6 +21,15 @@ public class CPU {
         }else{
             int x = randomNumber.nextInt(this.marbles)+1;    //upper bound becomes # of marbles
         }
+    }
+
+    @Override
+    public void loseMarbles(int marblesLost) {
+        this.marbles -= marblesLost;
+    }
+
+    @Override
+    public void setGamble(int gamble) {
     }
 
     //sets a random Boolean value to guess for even or odd

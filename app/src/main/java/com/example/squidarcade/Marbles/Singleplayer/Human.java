@@ -1,10 +1,11 @@
-package com.example.squidarcade.Marbles;
+package com.example.squidarcade.Marbles.Singleplayer;
 
-public class Player {
+public class Human implements Player{
     private int marbles;
     private int gamble;
+    private String playerRole;
 
-    public Player(){
+    public Human(){
         this.marbles = 10;
     }
 
@@ -12,6 +13,17 @@ public class Player {
         return this.marbles;
     }
 
+    //null
+    @Override
+    public void setGamble() {
+    }
+
+    @Override
+    public void loseMarbles(int marblesLost) {
+        this.marbles -= marblesLost;
+    }
+
+    @Override
     public void setGamble(int gamble){
         this.gamble = gamble;
     }
