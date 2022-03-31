@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SquidArcade">
         <activity
-            android:name=".MarblesMain"
+            android:name=".Marbles.MarblesMain"
             android:exported="false" />
         <activity
             android:name=".RLGLMain"
