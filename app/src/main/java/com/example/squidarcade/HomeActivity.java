@@ -10,9 +10,12 @@ import android.widget.Button;
 
 import android.content.Intent;
 
+import com.example.squidarcade.Marbles.MarblesMain;
+
 public class HomeActivity extends AppCompatActivity {
 
     private Button rlglButtonJ;
+    private Button marbleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +30,20 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        marbleButton = (Button) findViewById(R.id.marblesButton);
+        marbleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMarbles();
+            }
+        });
+
     }
     public void openRlgl(){
         Intent intent = new Intent(this, redLightGreenLight.class);
         startActivity(intent);
+    }
+    public void openMarbles(){
+        Intent intent = new Intent(this, MarblesMain.class);
     }
 }

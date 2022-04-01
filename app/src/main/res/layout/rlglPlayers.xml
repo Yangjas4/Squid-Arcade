@@ -9,8 +9,8 @@
     <Button
         android:id="@+id/button"
         android:layout_width="270dp"
-        android:layout_height="45dp"
-        android:text="Singleplayer"
+        android:layout_height="48dp"
+        android:text="@string/singleplayer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -21,8 +21,8 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="270dp"
-        android:layout_height="45dp"
-        android:text="Multiplayer"
+        android:layout_height="48dp"
+        android:text="@string/multiplayer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

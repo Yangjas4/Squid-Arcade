@@ -58,7 +58,14 @@ public class game {
         }
     }
 
+    public Player getHuman(){
+        return this.human;
+    }
 
+    public Player getCpu(){
+        return this.cpu;
+    }
+    
     public void assignRole(){
         Random zeroOrOne = new Random();
         int x = zeroOrOne.nextInt(2);
