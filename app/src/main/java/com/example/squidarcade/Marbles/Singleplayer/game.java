@@ -40,8 +40,9 @@ public class game {
         if (this.winner == null) {
             String turnResult;
             if (this.human.getPlayerRole().equals("guesser")) {
-                if (human.getGuess().equals("even") &&)
-                    turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";
+                if (human.getGuess().equals("even") && )
+                    turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";//string text still wip
+
             }
         }
     }
