@@ -4,6 +4,7 @@ public class Human implements Player{
     private int marbles;
     private int gamble;
     private String playerRole;
+    private String guess;
 
     public Human(){
         this.marbles = 10;
@@ -15,7 +16,7 @@ public class Human implements Player{
 
     //null
     @Override
-    public int generateGamble() {
+    public void generateGamble() {
         return 0;
     }
 
@@ -45,8 +46,17 @@ public class Human implements Player{
     }
 
     @Override
+    public void newGuess() {
+    }
+
+    @Override
+    public int getGamble() {
+        return 0;
+    }
+
+    @Override
     public String getGuess() {
-        return null;
+        return this.guess;
     }
 
 

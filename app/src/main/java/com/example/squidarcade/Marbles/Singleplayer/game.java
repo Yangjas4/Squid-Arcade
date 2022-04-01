@@ -38,7 +38,8 @@ public class game {
     public void turnResult(){
         String turnResult;
         if (this.human.getPlayerRole().equals("guesser")){
-            turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your "
+            if (human.getGuess().equals("even") && )
+            turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";
         }
 
     }

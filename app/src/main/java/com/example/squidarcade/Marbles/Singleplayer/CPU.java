@@ -5,6 +5,8 @@ import java.util.Random;
 public class CPU implements Player {
     private int marbles;
     private String playerRole;
+    private String guess;
+    private int gamble;
 
 
     public CPU(){
@@ -13,7 +15,7 @@ public class CPU implements Player {
 
     //Generates random number from 1-3, unless there are less than 3 marbles.
     @Override
-    public int generateGamble(){
+    public void generateGamble(){
         Random randomNumber = new Random();
         int gamble;
         if(this.marbles>2){
@@ -21,7 +23,7 @@ public class CPU implements Player {
         }else{
             gamble = randomNumber.nextInt(this.marbles)+1;    //upper bound becomes # of marbles
         }
-        return gamble;
+        this.gamble = gamble;
     }
 
     @Override
@@ -31,6 +33,7 @@ public class CPU implements Player {
 
     @Override
     public void setGamble(int gamble) {
+
     }
 
     @Override
@@ -39,25 +42,35 @@ public class CPU implements Player {
     }
 
     @Override
+    public String getGuess() {
+        return null;
+    }
+
+    @Override
     public void setPlayerRole(String newRole) {
         this.playerRole = newRole;
     }
 
     //sets a random Boolean value to guess for even or odd
-    public String getGuess(){
+    @Override
+    public void newGuess(){
         String guess;
         Random randomBoolean = new Random();
         boolean evenOdd = randomBoolean.nextBoolean();
         if (evenOdd == true) {
              guess = "even";
         } else {
-            guess = "false";
+            guess = "odd";
         }
+        this.guess = guess;
     }
-
 
     public int getMarbles(){
         return this.marbles;
     }
 
+    @Override
+    public int getGamble(){
+        return this.gamble;
+    }
 }

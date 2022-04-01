@@ -1,11 +1,14 @@
 package com.example.squidarcade.Marbles.Singleplayer;
 
 public interface Player {
+    String getGuess();
+
     public void setPlayerRole(String newRole);
     public int getMarbles();
-    public int generateGamble();
+    public void generateGamble();
     public void loseMarbles(int marblesLost);
     public void setGamble(int gamble);
     public String getPlayerRole();
-    public String getGuess();
+    public void newGuess();
+    public int getGamble();
 }
