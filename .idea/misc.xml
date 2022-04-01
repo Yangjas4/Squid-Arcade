@@ -8,6 +8,9 @@
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_main.xml" value="0.1875" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_rlglmain.xml" value="0.25" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/home_page.xml" value="0.27445652173913043" />
+        <entry key="..\:/Users/Sohban/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_main.xml" value="0.4" />
+        <entry key="..\:/Users/Sohban/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_singleplayer.xml" value="0.4" />
+        <entry key="..\:/Users/Sohban/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_singleplayer_evenOdd.xml" value="0.4" />
         <entry key="..\:/Users/Sohban/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_main.xml" value="0.4" />
         <entry key="..\:/Users/Sohban/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_singleplayer.xml" value="0.4" />
         <entry key="..\:/Users/Sohban/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_rlglmain.xml" value="0.4" />
@@ -21,7 +24,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
