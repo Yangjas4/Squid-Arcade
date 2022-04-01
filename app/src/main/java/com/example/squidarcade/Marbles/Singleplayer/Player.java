@@ -7,6 +7,7 @@ public interface Player {
     public int getMarbles();
     public void generateGamble();
     public void loseMarbles(int marblesLost);
+    public void addMarbles(int marblesGained);
     public void setGamble(int gamble);
     public String getPlayerRole();
     public void newGuess();

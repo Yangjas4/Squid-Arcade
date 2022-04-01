@@ -35,13 +35,28 @@ public class game {
     }
 
     //after player guesses or gambles shows what the cpu decided and whether the player lost or won the turn
-    public void turnResult(){
+    public void turnResult(int gamble){
         checkWin();
         if (this.winner == null) {
             String turnResult;
             if (this.human.getPlayerRole().equals("guesser")) {
-                if (human.getGuess().equals("even") &&)
-                    turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";
+                cpu.setGamble(gamble);
+                if ((human.getGuess().equals("even") && (cpu.getMarbles() % 2 == 0)) || (human.getGuess().equals("odd") && (cpu.getMarbles() % 2 != 0))) {
+                    cpu.loseMarbles(gamble);
+                    turnResult = String.format("Your guess was correct, CPU is holding %s marbles now.",cpu.getMarbles());
+                } else{
+                    cpu.addMarbles(gamble);
+                    turnResult = String.format("Your guess was wrong, CPU is holding %s marbles now.",cpu.getMarbles());
+                }
+            }else{
+                human.setGamble(gamble);
+                if ((cpu.getGuess().equals("even") && (human.getMarbles() % 2 == 0)) || (cpu.getGuess().equals("odd") && (human.getMarbles() % 2 != 0))) {
+                    human.loseMarbles(gamble);
+                    turnResult = String.format("CPU guessed correct, you are now holding %s marbles.",human.getMarbles());
+                } else{
+                    human.addMarbles(gamble);
+                    turnResult = String.format("CPU guessed incorrectly, you are now holding %s marbles.",human.getMarbles());
+                }
             }
         }
     }

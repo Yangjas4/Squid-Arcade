@@ -32,6 +32,11 @@ public class CPU implements Player {
     }
 
     @Override
+    public void addMarbles(int marblesGained) {
+        this.marbles += marblesGained;
+    }
+
+    @Override
     public void setGamble(int gamble) {
 
     }

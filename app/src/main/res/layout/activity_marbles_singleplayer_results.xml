@@ -22,10 +22,10 @@
         android:id="@+id/marblesRemaining"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="@string/marblesRemaining"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -33,35 +33,13 @@
         android:id="@+id/requestMarbles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="[Gambler] is holding [] marbles, [Guesser] guessed. [Guesser] is holding [] marbles"
+        android:text="@string/request_evenOdd"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/evenGuess"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/evenGuess"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="@string/even"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/oddGuess"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/oddGuess"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="@string/odd"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marblesRemaining" />
+        tools:layout_editor_absoluteY="253dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
