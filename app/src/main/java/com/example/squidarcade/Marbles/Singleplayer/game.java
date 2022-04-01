@@ -40,11 +40,6 @@ public class game {
         if (this.winner == null) {
             String turnResult;
             if (this.human.getPlayerRole().equals("guesser")) {
-<<<<<<< HEAD
-                if (human.getGuess().equals("even") && )
-                    turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";//string text still wip
-
-=======
                 cpu.setGamble(gamble);
                 if ((human.getGuess().equals("even") && (cpu.getMarbles() % 2 == 0)) || (human.getGuess().equals("odd") && (cpu.getMarbles() % 2 != 0))) {
                     cpu.loseMarbles(gamble);
@@ -62,7 +57,6 @@ public class game {
                     human.addMarbles(gamble);
                     turnResult = String.format("CPU guessed incorrectly, you are now holding %s marbles.",human.getMarbles());
                 }
->>>>>>> 39db38b33d78805cc7bec5d5eb0f611a4ae004d8
             }
         }
     }

@@ -17,7 +17,6 @@ public class Human implements Player{
     //null
     @Override
     public void generateGamble() {
-        return 0;
     }
 
     @Override
