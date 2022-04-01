@@ -1,4 +1,4 @@
-package ca.yorku.redlightgreenlight;
+package com.example.squidarcade;
 
 import androidx.appcompat.app.AppCompatActivity;
 
