@@ -29,24 +29,45 @@ public class game {
         switchRole();
         if (human.getPlayerRole().equals("guesser")){
             openGuesserActivity();  //to be implemented with android studio
+            openGuesserActivity();  //TODO: to be implemented with android studio
         } else if (human.getPlayerRole().equals("gambler")) {
-            openGamblerActivity(); //to be implemented with android studio
+            openGamblerActivity(); //TODO: to be implemented with android studio
         }
     }
 
     //after player guesses or gambles shows what the cpu decided and whether the player lost or won the turn
     public void turnResult(){
+    public void turnResult(int gamble){
         checkWin();
         if (this.winner == null) {
             String turnResult;
             if (this.human.getPlayerRole().equals("guesser")) {
+<<<<<<< HEAD
                 if (human.getGuess().equals("even") && )
                     turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";//string text still wip
 
+=======
+                cpu.setGamble(gamble);
+                if ((human.getGuess().equals("even") && (cpu.getMarbles() % 2 == 0)) || (human.getGuess().equals("odd") && (cpu.getMarbles() % 2 != 0))) {
+                    cpu.loseMarbles(gamble);
+                    turnResult = String.format("Your guess was correct, CPU is holding %s marbles now.",cpu.getMarbles());
+                } else{
+                    cpu.addMarbles(gamble);
+                    turnResult = String.format("Your guess was wrong, CPU is holding %s marbles now.",cpu.getMarbles());
+                }
+            }else{ /** this is the case when player gambles */
+                human.setGamble(gamble);
+                if ((cpu.getGuess().equals("even") && (human.getMarbles() % 2 == 0)) || (cpu.getGuess().equals("odd") && (human.getMarbles() % 2 != 0))) {
+                    human.loseMarbles(gamble);
+                    turnResult = String.format("CPU guessed correct, you are now holding %s marbles.",human.getMarbles());
+                } else{
+                    human.addMarbles(gamble);
+                    turnResult = String.format("CPU guessed incorrectly, you are now holding %s marbles.",human.getMarbles());
+                }
+>>>>>>> 39db38b33d78805cc7bec5d5eb0f611a4ae004d8
             }
         }
     }
-
     public void switchRole(){
         if (human.getPlayerRole().equals("guesser") && cpu.getPlayerRole().equals("gambler")) {
             human.setPlayerRole("gambler");
