@@ -36,12 +36,14 @@ public class game {
 
     //after player guesses or gambles shows what the cpu decided and whether the player lost or won the turn
     public void turnResult(){
-        String turnResult;
-        if (this.human.getPlayerRole().equals("guesser")){
-            if (human.getGuess().equals("even") && )
-            turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";
+        checkWin();
+        if (this.winner == null) {
+            String turnResult;
+            if (this.human.getPlayerRole().equals("guesser")) {
+                if (human.getGuess().equals("even") &&)
+                    turnResult = "CPU is holding " + cpu.getMarbles() + " marbles. Your guess was";
+            }
         }
-
     }
 
     public void switchRole(){
