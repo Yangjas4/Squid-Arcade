@@ -9,4 +9,7 @@
     <string name="round">Round #</string>
     <string name="requestGamble">Enter number of marbles you want to gamble below:</string>
     <string name="marblesRemaining">Marbles Remaining:</string>
+    <string name="request_evenOdd">Do you think your opponent gambled an \n even or odd amount of marbles</string>
+    <string name="even">Even</string>
+    <string name="odd">Odd</string>
 </resources>
