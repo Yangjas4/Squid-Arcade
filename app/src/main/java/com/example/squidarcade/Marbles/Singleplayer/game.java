@@ -28,9 +28,9 @@ public class game {
     public void nextTurn() {
         switchRole();
         if (human.getPlayerRole().equals("guesser")){
-            openGuesserActivity();  //to be implemented with android studio
+            openGuesserActivity();  //TODO: to be implemented with android studio
         } else if (human.getPlayerRole().equals("gambler")) {
-            openGamblerActivity(); //to be implemented with android studio
+            openGamblerActivity(); //TODO: to be implemented with android studio
         }
     }
 
@@ -48,7 +48,7 @@ public class game {
                     cpu.addMarbles(gamble);
                     turnResult = String.format("Your guess was wrong, CPU is holding %s marbles now.",cpu.getMarbles());
                 }
-            }else{
+            }else{ /** this is the case when player gambles */
                 human.setGamble(gamble);
                 if ((cpu.getGuess().equals("even") && (human.getMarbles() % 2 == 0)) || (cpu.getGuess().equals("odd") && (human.getMarbles() % 2 != 0))) {
                     human.loseMarbles(gamble);
@@ -60,7 +60,6 @@ public class game {
             }
         }
     }
-
     public void switchRole(){
         if (human.getPlayerRole().equals("guesser") && cpu.getPlayerRole().equals("gambler")) {
             human.setPlayerRole("gambler");
