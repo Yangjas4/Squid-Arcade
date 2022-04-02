@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SquidArcade">
         <activity
+            android:name=".home_page_test"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,7 +30,6 @@
         <activity
             android:name=".redLightGreenLight"
             android:exported="false" />
-
     </application>
 
 </manifest>
