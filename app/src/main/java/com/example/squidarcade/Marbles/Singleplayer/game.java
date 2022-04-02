@@ -60,6 +60,7 @@ public class game {
             }
         }
     }
+
     public void switchRole(){
         if (human.getPlayerRole().equals("guesser") && cpu.getPlayerRole().equals("gambler")) {
             human.setPlayerRole("gambler");
