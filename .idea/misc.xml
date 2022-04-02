@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Asus/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_main.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/Asus/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_rlglmain.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Asus/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/rlgl_players.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_MainRLGL.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_home_page_test.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Jason/OneDrive/Documents/GitHub/Squid-Arcade/app/src/main/res/layout/activity_marbles_main.xml" value="0.1875" />
@@ -51,7 +49,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

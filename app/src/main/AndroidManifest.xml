@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SquidArcade">
         <activity
-            android:name=".home_page_test"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:name=".MainActivitySingleplayer"
             android:exported="true">

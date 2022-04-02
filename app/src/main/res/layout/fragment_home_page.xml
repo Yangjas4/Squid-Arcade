@@ -24,7 +24,7 @@
             app:layout_constraintVertical_bias="0.025" />
 
         <Button
-            android:id="@+id/rlglButton2"
+            android:id="@+id/rlglButton"
             android:layout_width="364dp"
             android:layout_height="53dp"
             android:text="@string/game1"
@@ -37,7 +37,7 @@
             app:layout_constraintVertical_bias="0.518" />
 
         <Button
-            android:id="@+id/marblesButton2"
+            android:id="@+id/marblesButton"
             android:layout_width="369dp"
             android:layout_height="57dp"
             android:text="@string/game2"
