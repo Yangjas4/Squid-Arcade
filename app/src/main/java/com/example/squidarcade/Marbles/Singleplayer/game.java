@@ -25,14 +25,14 @@ public class game {
         }
     }
 
-    public void nextTurn() {
-        switchRole();
-        if (human.getPlayerRole().equals("guesser")){
-            openGuesserActivity();  //TODO: to be implemented with android studio
-        } else if (human.getPlayerRole().equals("gambler")) {
-            openGamblerActivity(); //TODO: to be implemented with android studio
-        }
-    }
+//    public void nextTurn() {
+//        switchRole();
+//        if (human.getPlayerRole().equals("guesser")){
+//            openGuesserActivity();  //TODO: to be implemented with android studio
+//        } else if (human.getPlayerRole().equals("gambler")) {
+//            openGamblerActivity(); //TODO: to be implemented with android studio
+//        }
+//    }
 
     //after player guesses or gambles shows what the cpu decided and whether the player lost or won the turn
     public void turnResult(int gamble){
