@@ -9,6 +9,6 @@ public class redLightGreenLight extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rlglPlayers);
+        setContentView(R.layout.rlgl_players);
     }
 }
