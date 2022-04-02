@@ -9,9 +9,13 @@
         android:name="com.example.squidarcade.HomeActivity"
         android:label="home_page"
         tools:layout="@layout/home_page" />
-    <fragment android:id="@+id/placeholder" >
+    <fragment
+        android:id="@+id/fragment_marbles_main"
+        android:name="com.example.squidarcade.fragment_marbles_main"
+        android:label="fragment_marbles_main"
+        tools:layout="@layout/fragment_marbles_main" >
         <action
-            android:id="@+id/action_placeholder_to_homeActivity"
+            android:id="@+id/action_fragment_marbles_main_to_homeActivity"
             app:destination="@id/homeActivity" />
     </fragment>
 </navigation>
