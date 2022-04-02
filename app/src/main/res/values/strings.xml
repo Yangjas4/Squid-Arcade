@@ -12,4 +12,5 @@
     <string name="request_evenOdd">Do you think your opponent gambled an \n even or odd amount of marbles</string>
     <string name="even">Even</string>
     <string name="odd">Odd</string>
+    <string name="rlgl">Red Light Green Light</string>
 </resources>

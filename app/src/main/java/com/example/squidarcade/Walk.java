@@ -32,7 +32,6 @@ public class Walk {
 
         x = screenX / 2;
         y = (int) (64 * screenRatioX);
-
     }
 
     Bitmap getWalk() {
