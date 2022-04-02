@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/squidnav"
-    app:startDestination="@id/fragmenthome_page">
+    app:startDestination="@id/fragment_home_page">
     <fragment
-        android:id="@+id/fragmenthome_page"
+        android:id="@+id/fragment_home_page"
         android:name="com.example.squidarcade.fragment_home_page"
-        android:label="fragment_fragmenthome_page"
+        android:label="fragment_fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
-            android:id="@+id/action_fragmenthome_page_to_fragment_marbles_main"
+            android:id="@+id/action_fragment_home_page_to_fragment_marbles_main"
             app:destination="@id/fragment_marbles_main" />
     </fragment>
     <fragment
