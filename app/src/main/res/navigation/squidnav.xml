@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/squidnav">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/squidnav"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.squidarcade.HomeActivity"
+        android:label="home_page"
+        tools:layout="@layout/home_page" />
 </navigation>
