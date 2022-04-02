@@ -24,7 +24,7 @@ public class MarblesMain extends AppCompatActivity {
             public void onClick(View view) {
                 TextView playerMarbles = findViewById(R.id.marblesRemaining);
 
-                setContentView(R.layout.activity_marbles_singleplayer_evenOdd);
+                setContentView(R.layout.activity_marbles_singleplayer_evenodd);
                 game game = new game();
                 while (game.getWinner()==null){
                     playerMarbles.setText(game.getHuman().getMarbles());
