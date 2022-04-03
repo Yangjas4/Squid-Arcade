@@ -18,7 +18,7 @@ public class Singleplayer extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_singleplayer);
+        setContentView(R.layout.fragment_rlgl_singleplayer);
 
         start = (Button) findViewById(R.id.buttonStart);
         start.setOnClickListener(new View.OnClickListener() {
