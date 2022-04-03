@@ -32,6 +32,7 @@ public class fragment_home_page extends Fragment implements View.OnClickListener
         if (view == marblesBtn) {
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
         } else {
+<<<<<<< HEAD
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_rlgl_main);
         }
     }

@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_marbles_singleplayer_evenodd#newInstance} factory method to
+ * Use the {@link marbles_singleplayer_evenodd#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_marbles_singleplayer_evenodd extends Fragment {
+public class marbles_singleplayer_evenodd extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class fragment_marbles_singleplayer_evenodd extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_marbles_singleplayer_evenodd() {
+    public marbles_singleplayer_evenodd() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class fragment_marbles_singleplayer_evenodd extends Fragment {
      * @return A new instance of fragment marbles_singleplayer_evenodd.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_marbles_singleplayer_evenodd newInstance(String param1, String param2) {
-        fragment_marbles_singleplayer_evenodd fragment = new fragment_marbles_singleplayer_evenodd();
+    public static marbles_singleplayer_evenodd newInstance(String param1, String param2) {
+        marbles_singleplayer_evenodd fragment = new marbles_singleplayer_evenodd();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
