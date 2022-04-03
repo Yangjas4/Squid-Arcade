@@ -11,5 +11,8 @@ public interface Player {
     public void setGamble(int gamble);
     public String getPlayerRole();
     public void newGuess();
+
+    void setGuess(String guess);
+
     public int getGamble();
 }

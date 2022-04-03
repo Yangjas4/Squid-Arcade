@@ -48,20 +48,20 @@ gameSingleplayer currentGame;
     public void onClick(View view) {
         currentGame.checkWin();
 
-        if (currentGame.getWinner() == null){
+        if (currentGame.getWinner() == null) {
             currentGame.switchRole();
 
             if (view == even && currentGame.getCpu().getGamble() % 2 == 0) {
                 currentGame.getCpu().loseMarbles(currentGame.getCpu().getGamble());
                 currentGame.getHuman().addMarbles(currentGame.getCpu().getGamble());
 
+            } else if (view == even && currentGame.getCpu().getGamble() % 2 != 0) {
+                currentGame.getCpu().loseMarbles(currentGame.getCpu().getGamble());
+                currentGame.getHuman().addMarbles(currentGame.getCpu().getGamble());
 
             }
 
+
         }
-
-
-
-
     }
 }

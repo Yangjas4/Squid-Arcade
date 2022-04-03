@@ -54,6 +54,11 @@ public class Human implements Player{
     }
 
     @Override
+    public void setGuess(String guess){
+        this.guess = guess;
+    }
+
+    @Override
     public int getGamble() {
         return 0;
     }
