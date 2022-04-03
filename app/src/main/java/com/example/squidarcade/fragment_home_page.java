@@ -33,7 +33,7 @@ public class fragment_home_page extends Fragment implements View.OnClickListener
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
         } else {
             //TODO: implement rlgl fragments later
-            NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
+            NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_marbles_singleplayer_gamble);
         }
     }
 }

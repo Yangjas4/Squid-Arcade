@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_fragment_home_page_to_fragment_marbles_main"
             app:destination="@id/fragment_marbles_main" />
+        <action
+            android:id="@+id/action_fragment_home_page_to_marbles_singleplayer_gamble"
+            app:destination="@id/marbles_singleplayer_gamble" />
     </fragment>
     <fragment
         android:id="@+id/fragment_marbles_main"
