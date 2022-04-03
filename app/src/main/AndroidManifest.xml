@@ -20,6 +20,9 @@
         <activity
             android:name=".Singleplayer"
             android:exported="false" />
+        <activity
+            android:name=".redLightGreenLight"
+            android:exported="false" />
     </application>
 
 </manifest>
