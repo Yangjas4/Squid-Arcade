@@ -12,9 +12,10 @@
         <action
             android:id="@+id/action_fragment_home_page_to_fragment_marbles_main"
             app:destination="@id/fragment_marbles_main" />
+        <action android:id="@+id/action_fragment_home_page_to_marbles_singleplayer_gamble" />
         <action
-            android:id="@+id/action_fragment_home_page_to_marbles_singleplayer_gamble"
-            app:destination="@id/marbles_singleplayer_gamble" />
+            android:id="@+id/action_fragment_home_page_to_fragment_rlgl_main"
+            app:destination="@id/fragment_rlgl_main" />
     </fragment>
     <fragment
         android:id="@+id/fragment_marbles_main"
@@ -51,4 +52,9 @@
             android:id="@+id/action_marbles_singleplayer_gamble_to_marbles_singleplayer_results"
             app:destination="@id/marbles_singleplayer_results" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_rlgl_main"
+        android:name="com.example.squidarcade.fragment_rlgl_main"
+        android:label="fragment_rlgl_main"
+        tools:layout="@layout/fragment_rlgl_main" />
 </navigation>

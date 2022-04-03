@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.squidarcade.Marbles.Singleplayer.singleGame;
+
 public class fragment_marbles_main extends Fragment implements View.OnClickListener {
     Button singleplayerBtn;
     Button multiplayerBtn;
@@ -26,7 +28,10 @@ public class fragment_marbles_main extends Fragment implements View.OnClickListe
     }
 
     public void onClick(View view){
-        if (view == ) {
+        if (view == singleplayerBtn) {
+            singleGame currentMarbleSingle = new singleGame();
+            currentMarbleSingle.assignRole();
+
             NavHostFragment.findNavController(fragment_marbles_main.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
         } else {
             //TODO: implement rlgl fragments later

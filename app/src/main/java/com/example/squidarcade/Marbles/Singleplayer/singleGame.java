@@ -2,13 +2,13 @@ package com.example.squidarcade.Marbles.Singleplayer;
 
 import java.util.Random;
 
-public class game {
+public class singleGame {
 
     private Player winner;
     private Player human;
     private Player cpu;
 
-    public game() {
+    public singleGame() {
         this.human = new Human();
         this.cpu = new CPU();
     }
