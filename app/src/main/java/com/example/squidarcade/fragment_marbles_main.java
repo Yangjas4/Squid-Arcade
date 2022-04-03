@@ -18,16 +18,16 @@ public class fragment_marbles_main extends Fragment implements View.OnClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View homePage =  inflater.inflate(R.layout.fragment_home_page, container, false);
-        marblesBtn = (Button) homePage.findViewById(R.id.marblesButton);
-        marblesBtn.setOnClickListener(this);
-        rlglBtn = (Button) homePage.findViewById(R.id.rlglButton);
-        rlglBtn.setOnClickListener(this);
+        singleplayerBtn = (Button) homePage.findViewById(R.id.marblesButton);
+        singleplayerBtn.setOnClickListener(this);
+        multiplayerBtn = (Button) homePage.findViewById(R.id.rlglButton);
+        multiplayerBtn.setOnClickListener(this);
         return homePage;
     }
 
     @Override
     public void onClick(View view) {
-        if (view == marblesBtn) {
+        if (view == singleplayerBtn) {
        //
         }
     }
