@@ -13,7 +13,7 @@ public class MainActivitySingleplayer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_MainRLGL);
+        setContentView(R.layout.activity_mainrlgl);
         singleplayer = (Button) findViewById(R.id.button);
         singleplayer.setOnClickListener(new View.OnClickListener() {
             @Override
