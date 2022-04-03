@@ -22,16 +22,16 @@ public class fragment_marbles_main extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View homePage =  inflater.inflate(R.layout.fragment_home_page, container, false);
-        singleplayerBtn = (Button) homePage.findViewById(R.id.marblesButton);
-        singleplayerBtn.setOnClickListener(this);
-        multiplayerBtn = (Button) homePage.findViewById(R.id.rlglButton);
-        multiplayerBtn.setOnClickListener(this);
+        marblesBtn = (Button) homePage.findViewById(R.id.marblesButton);
+        marblesBtn.setOnClickListener(this);
+        rlglBtn = (Button) homePage.findViewById(R.id.rlglButton);
+        rlglBtn.setOnClickListener(this);
         return homePage;
     }
 
     @Override
     public void onClick(View view) {
-        if (view == singleplayerBtn) {
+        if (view == marblesBtn) {
        //
 =======
     // TODO: Rename parameter arguments, choose names that match
