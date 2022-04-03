@@ -10,8 +10,6 @@ import android.widget.Button;
 
 import android.content.Intent;
 
-import com.example.squidarcade.Marbles.MarblesMain;
-
 public class HomeActivity extends AppCompatActivity {
 
     private Button rlglButtonJ;

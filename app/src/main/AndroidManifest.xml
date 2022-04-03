@@ -20,9 +20,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Marbles.MarblesMain"
-            android:exported="false" />
-        <activity
             android:name=".Singleplayer"
             android:exported="false" />
         <activity
