@@ -9,6 +9,6 @@ public class RLGLMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rlglmain);
+        setContentView(R.layout.fragment_rlgl_player);
     }
 }

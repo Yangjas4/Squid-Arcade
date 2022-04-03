@@ -19,7 +19,6 @@ public class fragment_home_page extends Fragment implements View.OnClickListener
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View homePage =  inflater.inflate(R.layout.fragment_home_page, container, false);
         marblesBtn = (Button) homePage.findViewById(R.id.marblesButton);
         marblesBtn.setOnClickListener(this);
@@ -32,7 +31,6 @@ public class fragment_home_page extends Fragment implements View.OnClickListener
         if (view == marblesBtn) {
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
         } else {
-            //TODO: implement rlgl fragments later
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);
         }
     }
