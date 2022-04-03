@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page);
+        setContentView(R.layout.fragment_home_page);
 
         rlglButtonJ = (Button) findViewById(R.id.rlglButton);
         rlglButtonJ.setOnClickListener(new View.OnClickListener() {

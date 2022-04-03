@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SquidArcade">
         <activity
-            android:name=".MainActivity"
-            android:name=".MainActivitySingleplayer"
+            android:name="MainActivity"
+            android:name="MainActivitySingleplayer"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
