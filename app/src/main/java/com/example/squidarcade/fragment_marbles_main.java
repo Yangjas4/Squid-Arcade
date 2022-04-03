@@ -12,11 +12,12 @@ import android.widget.Button;
 
 public class fragment_marbles_main extends Fragment implements View.OnClickListener{
 
-    Button singleplayerBtn;
-    Button multiplayerBtn;
+    Button marblesBtn;
+    Button rlglBtn;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         View homePage =  inflater.inflate(R.layout.fragment_home_page, container, false);
         marblesBtn = (Button) homePage.findViewById(R.id.marblesButton);
         marblesBtn.setOnClickListener(this);
