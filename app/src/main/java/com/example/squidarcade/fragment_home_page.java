@@ -28,6 +28,7 @@ public class fragment_home_page extends Fragment implements View.OnClickListener
         return homePage;
     }
 
+
     public void onClick(View view) {
         if (view == marblesBtn) {
             NavHostFragment.findNavController(fragment_home_page.this).navigate(R.id.action_fragment_home_page_to_fragment_marbles_main);

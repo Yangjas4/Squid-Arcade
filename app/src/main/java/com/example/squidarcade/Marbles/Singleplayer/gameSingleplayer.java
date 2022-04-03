@@ -1,8 +1,11 @@
 package com.example.squidarcade.Marbles.Singleplayer;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.Random;
 
-public class gameSingleplayer {
+public class gameSingleplayer implements Parcelable {
 
     private Player winner;
     private Player human;
@@ -11,7 +14,23 @@ public class gameSingleplayer {
     public gameSingleplayer() {
         this.human = new Human();
         this.cpu = new CPU();
+        this.winner = null;
     }
+
+    protected gameSingleplayer(Parcel in) {
+    }
+
+    public static final Creator<gameSingleplayer> CREATOR = new Creator<gameSingleplayer>() {
+        @Override
+        public gameSingleplayer createFromParcel(Parcel in) {
+            return new gameSingleplayer(in);
+        }
+
+        @Override
+        public gameSingleplayer[] newArray(int size) {
+            return new gameSingleplayer[size];
+        }
+    };
 
     public Player getWinner(){
         return this.winner;
@@ -93,4 +112,12 @@ public class gameSingleplayer {
         }
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+    }
 }

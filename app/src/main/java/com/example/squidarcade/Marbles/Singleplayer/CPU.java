@@ -48,7 +48,7 @@ public class CPU implements Player {
 
     @Override
     public String getGuess() {
-        return null;
+        return this.guess;
     }
 
     @Override

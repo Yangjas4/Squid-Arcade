@@ -35,7 +35,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <TextView
-            android:id="@+id/requestMarbles"
+            android:id="@+id/results"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/request_evenOdd"
