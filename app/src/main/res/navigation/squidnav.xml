@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_marbles_singleplayer_results" />
     <fragment
         android:id="@+id/marbles_singleplayer_evenodd"
-        android:name="com.example.squidarcade.marbles_singleplayer_evenodd"
+        android:name="com.example.squidarcade.fragment_marbles_singleplayer_evenodd"
         android:label="fragment_marbles_singleplayer_evenodd"
         tools:layout="@layout/fragment_marbles_singleplayer_evenodd" >
         <action
