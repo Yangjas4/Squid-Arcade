@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,14 +55,32 @@ gameSingleplayer currentGame;
             if (view == even && currentGame.getCpu().getGamble() % 2 == 0) {
                 currentGame.getCpu().loseMarbles(currentGame.getCpu().getGamble());
                 currentGame.getHuman().addMarbles(currentGame.getCpu().getGamble());
+                NavHostFragment.findNavController(fragment_marbles_singleplayer_evenodd.this).navigate(R.id. action_marbles_singleplayer_evenodd_to_marbles_singleplayer_results);
 
             } else if (view == even && currentGame.getCpu().getGamble() % 2 != 0) {
+                currentGame.getCpu().addMarbles(currentGame.getCpu().getGamble());
+                currentGame.getHuman().loseMarbles(currentGame.getCpu().getGamble());
+                NavHostFragment.findNavController(fragment_marbles_singleplayer_evenodd.this).navigate(R.id. action_marbles_singleplayer_evenodd_to_marbles_singleplayer_results);
+
+            } else if (view == odd && currentGame.getCpu().getGamble() % 2 == 0) {
+                currentGame.getCpu().addMarbles(currentGame.getCpu().getGamble());
+                currentGame.getHuman().loseMarbles(currentGame.getCpu().getGamble());
+                NavHostFragment.findNavController(fragment_marbles_singleplayer_evenodd.this).navigate(R.id. action_marbles_singleplayer_evenodd_to_marbles_singleplayer_results);
+
+            } else if (view == odd && currentGame.getCpu().getGamble() % 2 != 0) {
                 currentGame.getCpu().loseMarbles(currentGame.getCpu().getGamble());
                 currentGame.getHuman().addMarbles(currentGame.getCpu().getGamble());
+                NavHostFragment.findNavController(fragment_marbles_singleplayer_evenodd.this).navigate(R.id. action_marbles_singleplayer_evenodd_to_marbles_singleplayer_results);
 
             }
 
-
         }
+
+
+
+
+
+
+
     }
 }

@@ -46,6 +46,11 @@ public class HumanMultiplayer implements Player {
     }
 
     @Override
+    public void setGuess(String guess) {
+
+    }
+
+    @Override
     public int getGamble() {
         return 0;
     }

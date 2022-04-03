@@ -70,6 +70,11 @@ public class CPU implements Player {
         this.guess = guess;
     }
 
+    @Override
+    public void setGuess(String guess) {
+
+    }
+
     public int getMarbles(){
         return this.marbles;
     }
