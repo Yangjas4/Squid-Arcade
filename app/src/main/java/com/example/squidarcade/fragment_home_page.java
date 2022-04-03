@@ -12,11 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link fragment_home_page#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class fragment_home_page extends Fragment implements View.OnClickListener{
     Button marblesBtn;
     Button rlglBtn;
